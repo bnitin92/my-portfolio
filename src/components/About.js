@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
-import bgwater from "../img/bgwater.jpg";
+//import bgwater from "../img/bgwater.jpg";
+import bgnasa from "../img/nasa1.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -27,7 +28,7 @@ export default function About() {
   if (!author) return <div>Loading...</div>;
   return (
     <main className="relative">
-      <img src={bgwater} alt="Water" className="absolute w-full" />
+      <img src={bgnasa} alt="Water" className="absolute w-full" />
       <div className="p-10 lg:t-48 container mx-auto relative">
         <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
           <img
@@ -46,6 +47,14 @@ export default function About() {
                 projectId="83q2lwf1"
                 dataset="production"
               />
+              <a
+                href="https://nitinbhandari.herokuapp.com/"
+                alt="web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Know More
+              </a>
             </div>
           </div>
         </section>

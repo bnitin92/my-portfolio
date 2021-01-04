@@ -8,7 +8,7 @@ export default {
       type: "string",
     },
     {
-      name: "data",
+      name: "date",
       type: "datetime",
     },
     {
